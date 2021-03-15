@@ -47,7 +47,7 @@ public class Student {
     public void setGrade(int grade){
         this.grade = grade ;
     }
-    public void getGrade(){
+    public int getGrade(){
         return grade;
     }
 

@@ -18,8 +18,8 @@ public class Lab {
         }
     }
         public void print() {
-            for(Student std : students){
-                std.print();
+            for(int i=0 ;i < currentSize ; i++ ){
+                students[i].print();
             }
             calculateAvg();
             System.out.println( "Average:" + avg);
@@ -30,15 +30,15 @@ public class Lab {
         public void setStudents(Student[] students) {
             this.students = students ;
         }
-        public int getAvg(){
+        public float getAvg(){
             return avg ;
         }
         public void calculateAvg(){
         float sum = 0 ;
         int cnt = 0;
-            for(Student std : students){
-            sum += std.getGrade();
-            cnt ++ ;
+            for(int i = 0 ; i < currentSize ; i++){
+                sum += students[i].getGrade();
+                cnt ++ ;
             }
         avg = sum / cnt;
         }

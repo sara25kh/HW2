@@ -3,7 +3,7 @@ public class Run {
         Student std1 = new Student("Ehsan","Edalat", "9031066");
         Student std2 = new Student("Seyed", "Ahmadpanah", "9031806");
         Student std3 = new Student("Ahmad", "Asadi", "9031054");
-        Lab lab1 = new Lab();
+        Lab lab1 = new Lab(4 , "sunday");
         lab1.enrollStudent (std1);
         lab1.enrollStudent(std2);
         lab1.enrollStudent (std3);
