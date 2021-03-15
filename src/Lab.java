@@ -31,6 +31,7 @@ public class Lab {
             this.students = students ;
         }
         public float getAvg(){
+            calculateAvg();
             return avg ;
         }
         public void calculateAvg(){
@@ -54,6 +55,7 @@ public class Lab {
         public void setCapacity(int capacity) {
             this.capacity = capacity ;
         }
+
 
 }
 

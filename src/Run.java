@@ -4,6 +4,8 @@ public class Run {
         Student std2 = new Student("Seyed", "Ahmadpanah", "9031806");
         Student std3 = new Student("Ahmad", "Asadi", "9031054");
         Lab lab1 = new Lab(4 , "sunday");
+        Department department1 = new Department(4 , "computer");
+        department1.addLab(lab1);
         lab1.enrollStudent (std1);
         lab1.enrollStudent(std2);
         lab1.enrollStudent (std3);
@@ -17,5 +19,6 @@ public class Run {
         std3.setFirstName("HamidReza");
         std3.print();
         lab1.print();
+        department1.print();
     }
 }
