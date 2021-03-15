@@ -4,6 +4,12 @@ public class Lab {
     private String day;
     private int capacity;
     private int currentSize;
+
+    /**
+     * create new lab with a given capacity and day
+     * @param cap
+     * @param d
+     */
     public Lab(int cap, String d) {
         capacity = cap ;
         students = new Student[cap] ;
@@ -30,7 +36,12 @@ public class Lab {
         public void setStudents(Student[] students) {
             this.students = students ;
         }
-        public float getAvg(){
+
+    /** get the average of labs
+     *
+     * @return avg field
+     */
+    public float getAvg(){
             calculateAvg();
             return avg ;
         }
@@ -43,16 +54,36 @@ public class Lab {
             }
         avg = sum / cnt;
         }
+
+        /**
+         * get the day
+         * @return day field
+         */
         public String getDay() {
             return day ;
         }
-        public void setDay(String day) {
+
+    /**
+     *
+     * @param day set day of lab
+     */
+    public void setDay(String day) {
             this.day = day ;
         }
-        public int getCapacity() {
+
+    /**
+     * get capacity of lab
+     * @return capacity
+     */
+    public int getCapacity() {
             return capacity ;
         }
-        public void setCapacity(int capacity) {
+
+    /**
+     * set capacity of lab
+     * @param capacity
+     */
+    public void setCapacity(int capacity) {
             this.capacity = capacity ;
         }
 
